@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>csrf</title>
+    </head>
+    <body>
+        <form action="http://localhost:8001/camagru/subscription.php" method="post">
+            <table>
+                <tr>
+                    <td><p>Sign up to share and comment your photos with your friends</p></td>
+                </tr>
+                <tr>
+                    <td><hr></td>				
+                </tr>
+                <tr>
+                    <td><p style="font-weight:bold; color: #DA2C38"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="login" placeholder="Nom d'utilisateur"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="mail" placeholder="Adresse e-mail"></td>
+                </tr>
+                <tr>
+                    <td><input id="password" type="password" name="passwd" placeholder="Mot de passe"></td>
+                </tr>
+                <tr>
+                    <td id="pass_security" style="display:none; text-align:left; padding-left:10%;">Your password must contain :<br/>
+                        - at least 8 characters<br/>
+                        - a number<br/>
+                        - upper and lower case</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="passwd2" placeholder="Confirmation de mot de passe"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Sign up"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
